@@ -1,0 +1,19 @@
+function clickNr(){ 
+  clicks += 1;  
+ document.querySelector(".square").innerHTML = clicks; 
+} 
+ if (clickedColor === pickedColor) {   
+    
+messageDisplay.textContent = "Correct!" + clickNr();
+
+
+
+var clicks = 0;
+
+.....
+
+clicks++;
+
+if (clickedColor === pickedColor) {
+
+messageDisplay.textContent = "Correct!" + clicks
