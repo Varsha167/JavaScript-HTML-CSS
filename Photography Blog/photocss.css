@@ -1,0 +1,18 @@
+img{
+	width: 40%;
+	float: left; /*removes the unnecesarry white spaces*/
+	margin:1.66%;
+}
+
+h3{
+
+	font-family:  'Passion One', cursive;
+	font-size: 40px;
+	margin-left:1.66%;
+	text-transform: uppercase;
+	border-bottom: 2px solid #f1f1f1;
+	width: 33%;
+	padding-bottom: 20px
+
+
+}

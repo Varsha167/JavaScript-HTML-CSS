@@ -1,0 +1,49 @@
+document.querySelector("ul").addEventListener("click",function(event){
+  console.log(event);
+  if (event.target.tagName.toLowerCase() === "span"){
+    var meUl = this; var meLi = event.target.parentNode;
+    meLi.classList.add("delete");
+    setTimeout(function(){
+      meUl.removeChild(meLi);
+    },200);
+    event.stopPropagation();
+  }
+});
+
+
+
+
+
+
+
+
+input.addEventListener("keypress",function(event){
+ 
+ if (event.keyCode === 13) {
+         
+    var newLi=document.createElement("li")
+    var inVal = this.value;
+    //remove from the text box after hitting enter
+    this.value=''
+    //newLi.textContent=inVal
+    //ul.appendChild(newLi)
+   ul.innerHTML += '<li><span>X</span> ' + inVal + '</li>'; 
+   
+   
+   var lis = document.querySelectorAll("li");
+   var spans = document.querySelectorAll("span")
+ 
+   //add and remove strike-through
+   for(var i =0; i<lis.length; i++) {
+ 
+    lis[i].addEventListener("click", function() {
+        this.classList.toggle("completed");
+  
+    });
+ 
+   } 
+ 
+   //remove an entry when clicked on "X"
+   for(var i =0; i<spans.length; i++) {
+    spans[i].addEventListener("click", function(){
+        this.parentNode.remove();

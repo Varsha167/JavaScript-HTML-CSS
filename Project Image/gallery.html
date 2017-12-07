@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+	 <style type="text/css">
+      .image1 {
+
+        background-image: url(https://images.unsplash.com/photo-1464802686167-b939a6910659?w=1466&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D)
+      }
+
+      .image2{
+      	background-image: url(https://images.unsplash.com/photo-1439396087961-98bc12c21176?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450)
+      }
+
+       .image3{
+      	background-image: url(https://images.unsplash.com/photo-1503104834685-7205e8607eb9?w=334&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D)
+      }
+
+
+      .image {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+    </style>
+</head>
+<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top"> <!-- changes the colour of nav bar -->
+		<div class="container"> <!-- creates space around -->
+		<div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+		<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>  IMG</a>
+	</div>
+	 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<ul class ="nav navbar-nav">
+		<li><a href="#">About</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+
+	<ul class=" nav navbar-nav navbar-right">
+		<li><a href="#">Sign Up</a></li>
+		<li><a href="#">Login</a></li>
+
+	</ul>
+	</div>
+	</div>
+	</nav>
+	<div class="container">
+	<div class="jumbotron">
+		<h1><i class="fa fa-camera-retro" aria-hidden="true"></i></span> The Image Gallery</h1>
+		<p> Here's a bunch of images to look at. Kafi amaze!</p>
+	</div>
+	<div class="row flex"> <!-- One row is enough as the rest of the images will wrap up as we have already mentioned that one image will take 4 units. So the rest of images will go neeche. -->
+	<div class="col-lg-4 col-sm-6">
+		 <div class=thumbnail>
+			<img src="http://i.imgur.com/qK42fUu.jpg-">
+			</div>
+		</div> 
+	<div class="col-lg-4 col-sm-6">
+		 	<div class=thumbnail>
+				<img src="https://images.unsplash.com/photo-1435771112039-1e5b2bcad966?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450 ">
+			</div>
+		</div>
+	<div class="col-lg-4 col-sm-6">
+		 <div class=thumbnail>
+				<img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+		</div>
+		</div>
+		<div class="col-lg-4 col-sm-6">
+		 	<div class=thumbnail>
+				<div class="image image1"></div>
+		</div>
+	</div>
+	<div class="col-lg-4 col-sm-6">
+		 	<div class=thumbnail> 
+				<img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+			</div>
+		</div>
+	<div class="col-lg-4 col-sm-6">
+		 	<div class=thumbnail>
+				<img src="https://images.unsplash.com/photo-1436262513933-a0b06755c784?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+			</div>
+		</div> 
+	</div>
+	<div class="col-lg-4 col-sm-6 ">
+		 	<div class=thumbnail>
+				<img src="https://images.unsplash.com/photo-1434543177303-ef2cc7707e0d?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+			</div>
+		</div>	
+	<div class="col-lg-4 col-sm-6">
+		 	<div class=thumbnail>
+				<div class="image image2"></div>
+			</div>
+		</div>
+
+		<div class="col-lg-4 col-sm-6">
+		 	<div class=thumbnail>
+				<div class="image image3"></div>
+			</div>
+		</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

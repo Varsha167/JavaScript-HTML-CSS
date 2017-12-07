@@ -1,0 +1,28 @@
+
+
+Input keypress not working
+Steven · Lecture 192 · 10 months ago
+So the following is my javascript code: 
+
+$("input[type='text']").keypress(function(event){
+          if(event.which === 13){
+              console.log("you hit enter");
+          } 
+});
+
+This code will not read "you hit enter", however if i remove the type spececifty from input it works. So the following works fine:
+
+$("input").keypress(function(event){
+          if(event.which === 13){
+              console.log("you hit enter");
+          } 
+});
+
+Any suggestions?
+
+
+
+Follow Responses
+MM
+Muhammad Aqeel  · 10 months ago Answer 
+Just make sure you have some input element of type text in your html file. otherwise your syntax looks fine.
