@@ -1,0 +1,35 @@
+:root{ /*Defining Variables*/
+  --spacing: 10px;
+  --base: #ffc600;
+  --blur: 10px;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+}
+
+.hl {
+  color: var(--base);
+}
+
+
+body{
+  text-align: center;
+  background: #193549;
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+
+}
+
+
+.controls {
+  margin-top: 100px;
+}
+
+input {
+  width:100px;
+}
